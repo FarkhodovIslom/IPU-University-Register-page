@@ -6,3 +6,35 @@
     box-sizing: border-box;
     font-family: "Roboto";
 }
+
+
+/* Global styles */
+.bg-primary
+{
+    background-color: #0c1737 !important;
+}
+.text-primary
+{
+    color: #0c1737 !important;
+}
+.btn-primary
+{
+    background-color: #0c1737 !important;
+}
+.btn-outline-primary 
+{
+    border-color: #0c1737 !important;
+    color: #0c1737 !important; 
+}
+.btn-outline-primary:hover 
+{
+    background-color: #0c1737 !important;
+    color: white !important;
+}
+
+
+/* Form */
+form 
+{
+    margin-top: 50px;
+}

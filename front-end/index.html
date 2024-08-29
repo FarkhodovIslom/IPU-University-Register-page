@@ -25,30 +25,59 @@
     <title>Iqtisod vs Pedagogika Universtitetiga ro'yxatdan o'tish</title>
 </head>
 <body class="bg-light">
+
+  <!-- Header -->
+   <header class="container-md d-flex align-items-center justify-content-between pt-4">
+    <a class="logo">
+      <img src="./images/logo_dark.png" width="160" alt="">
+    </a>
+    <h1 class="heading h3 mb-0">2024-2025-o'quv yili uchun ariza topshirish</h1>
+   </header>
+   <!-- Header End -->
+
+   <div class="container-md">
+    <hr>
+   </div>
+
     <div class="container-md">
-      <div class="row">
-        <h1 class="heading h3">2024-2025-o'quv yili uchun ariza topshirish</h1>
-        <div class="col-md-6">
+      <div class="row justify-content-start">
+        <div class="col-md-6 mb-5">
           <form>
+
+            <h3 class="h3 mb-3 mt-3">
+              <i class="text-primary fa-solid fa-user"></i>
+              Shaxsiy ma'lumotlar
+            </h3>
+
             <div class="mb-3">
               <label for="name" class="form-label">Familiya <span class="text-primary">*</span></label>
               <input type="text" class="form-control" name="name" id="firstName">
             </div>
+
             <div class="mb-3">
               <label for="lastName" class="form-label">Ism <span class="text-primary">*</span></label>
               <input type="text" class="form-control" name="lastName" id="lastName">
             </div>
+
             <div class="mb-3">
               <label for="number" class="form-label">Telefon Raqam <span class="text-primary">*</span></label>
-              <input type="number" class="form-control" name="number" id="number">
+              <div class="input-group">
+                <span class="input-group-text">+998</span>
+                <input type="number" class="form-control" name="number" id="number" placeholder="__-___-__-__" minlength="9" maxlength="9">
+              </div>
             </div>
+
             <div class="mb-3">
-              <label for="" class="form-label">Ta'lim shakli*</label>
+              <label for="region">Vilo</label>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="" class="form-label">Ta'lim shakli <span class="text-primary">*</span></label>
               <select name="" id="" class="form-control">
-                <option value="">1-kurs</option>
-                <option value="">2-kurs</option>
-                <option value="">3-kurs</option>
-                <option value="">4-kurs</option>
+                <option disabled selected>--Ta'lim turi--</option>
+                <option value="allTime">Kunduzgi</option>
+                <option value="partTime">Sirtqi</option>
               </select>
             </div>
             <div class="mb-3">
