@@ -11,24 +11,24 @@
 /* Global styles */
 .bg-primary
 {
-    background-color: #0c1737 !important;
+    background-color: #0a173d !important;
 }
 .text-primary
 {
-    color: #0c1737 !important;
+    color: #0a173d !important;
 }
 .btn-primary
 {
-    background-color: #0c1737 !important;
+    background-color: #0a173d !important;
 }
 .btn-outline-primary 
 {
-    border-color: #0c1737 !important;
-    color: #0c1737 !important; 
+    border-color: #0a173d !important;
+    color: #0a173d !important; 
 }
 .btn-outline-primary:hover 
 {
-    background-color: #0c1737 !important;
+    background-color: #0a173d !important;
     color: white !important;
 }
 
@@ -37,4 +37,23 @@
 form 
 {
     margin-top: 50px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .heading 
+    {
+        font-size: larger;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .heading 
+    {
+        width: 50%;
+    }
 }
