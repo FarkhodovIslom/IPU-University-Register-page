@@ -42,7 +42,7 @@
     <div class="container-md">
       <div class="row justify-content-start">
         <div class="form-wrapper">
-          <form>
+          <div>
 
             <div class="row">
 
@@ -54,19 +54,24 @@
     
                 <div class="mb-3">
                   <label for="name" class="form-label">Familiya <span class="text-primary">*</span></label>
-                  <input type="text" class="form-control" name="name" id="firstName" required>
+                  <input type="text" class="form-control" name="lastName" id="lastName" required>
                 </div>
     
                 <div class="mb-3">
                   <label for="lastName" class="form-label">Ism <span class="text-primary">*</span></label>
-                  <input type="text" class="form-control" name="lastName" id="lastName" required>
+                  <input type="text" class="form-control" name="firstName" id="firstName" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="age" class="form-label">Tug'ilgan sanasi <span class="text-primary">*</span></label>
+                  <input type="date" class="form-control" id="age" max="2007-12-31" required>
                 </div>
     
                 <div class="mb-3">
                   <label for="number" class="form-label">Telefon Raqam <span class="text-primary">*</span></label>
                   <div class="input-group">
                     <span class="input-group-text">+998</span>
-                    <input type="tel" inputmode="numeric" class="form-control" name="number" id="number" placeholder="__-___-__-__" minlength="9" maxlength="9" pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                    <input type="tel" inputmode="numeric" class="form-control" name="number" id="number" placeholder="__-___-__-__" minlength="9" maxlength="9" pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" required>
                   </div>
                 </div>
                 
@@ -119,7 +124,7 @@
               </div>
 
               <div class="mb-3 mt-3">
-                <button class="btn btn-primary">
+                <button id="sendBtn" class="btn btn-primary">
                   <i class="fa-solid fa-paper-plane"></i> &nbsp;
                   Ro'yxatdan o'tish
                 </button>
@@ -127,14 +132,17 @@
 
             </div>
             
-          </form>
+          </div>
         </div>
       </div>
     </div>
 
 
-<!-- Scripts -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+
 <script src="../back-end/smtp.js"></script>
 <script src="./script/script.js"></script>
+<script src="./script/email.js"></script>
 </body>
 </html>
