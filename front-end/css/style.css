@@ -9,6 +9,11 @@
 
 
 /* Global styles */
+body 
+{
+    position: relative;
+    min-height: 100vh;
+}
 .bg-primary
 {
     background-color: #0a173d !important;
@@ -33,6 +38,7 @@
 }
 
 
+
 /* Form */
 form 
 {
@@ -40,12 +46,22 @@ form
 }
 
 
-
+/* Footer */
+#footer 
+{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
 
 
 
 
 @media only screen and (max-width: 768px) {
+    body 
+    {
+        height: 160vh;
+    }
     .heading 
     {
         font-size: larger;
