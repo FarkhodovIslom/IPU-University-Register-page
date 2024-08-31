@@ -106,8 +106,8 @@
                 <div class="mb-3">
                   <label for="edu_time" class="form-label">Ta'lim Shakli <span class="text-primary">*</span></label>
                   <select class="form-select" name="" id="edu_time">
-                    <option value="uzb">Kunduzgi</option>
-                    <option value="ru">Sirtqi</option>
+                    <option value="half_1">Kunduzgi</option>
+                    <option value="half_2">Sirtqi</option>
                   </select>
                 </div>
 
@@ -145,11 +145,89 @@
       </div>
     </footer>
 
+      <script>
+        document.getElementById('sendBtn').addEventListener('click', async function(event) {
+            event.preventDefault();
+        
+            const lastName = document.getElementById('lastName').value;
+            const firstName = document.getElementById('firstName').value;
+            const age = document.getElementById('age').value;
+            const number = document.getElementById('number').value;
+            const passport = document.getElementById('passport').value;
+            const edu_type = document.getElementById('edu_type').value;
+            const edu_lang = document.getElementById('edu_lang').value;
+            const edu_time = document.getElementById('edu_time').value;
+            const edu_course = document.getElementById('edu_course').value;
+        
+            const response = await fetch('http://localhost:3000/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    lastName,
+                    firstName,
+                    age,
+                    number,
+                    passport,
+                    edu_type,
+                    edu_lang,
+                    edu_time,
+                    edu_course
+                }),
+            });
+        
+            if (response.ok) {
+                alert('Registration successful!');
+            } else {
+                alert('Registration failed.');
+            }
+        });
+
+        app.post('/register', async (req, res) => {
+            const { lastName, firstName, age, number, passport, edu_type, edu_lang, edu_time, edu_course } = req.body;
+
+            const newUser = new User({
+                lastName,
+                firstName,
+                age,
+                number,
+                passport,
+                edu_type,
+                edu_lang,
+                edu_time,
+                edu_course
+            });
+
+            try {
+                await newUser.save();
+                res.status(201).send('User registered successfully');
+            } catch (err) {
+                res.status(400).send('Error registering user');
+            }
+          });
+
+          const UserSchema = new mongoose.Schema({
+            lastName: String,
+            firstName: String,
+            age: Date,
+            number: String,
+            passport: String,
+            edu_type: String,
+            edu_lang: String,
+            edu_time: String,
+            edu_course: String,
+        });
+
+        const User = mongoose.model('User', UserSchema);
+      </script>
+
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 
 <script src="../back-end/smtp.js"></script>
+<script src="../back-end/server.js"></script>
 <script src="./script/script.js"></script>
 <script src="./script/email.js"></script>
-</body>
+</body> 
 </html>

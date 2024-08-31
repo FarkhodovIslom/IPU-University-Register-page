@@ -20,10 +20,10 @@ sendBtn.addEventListener("click", function() {
     userdata.age = document.getElementById("age").value;
     userdata.phone = document.getElementById("number").value;
     userdata.passport = document.getElementById("passport").value;
-    userdata.edu_type = document.getElementById("edu_type");
-    userdata.edu_lang = document.getElementById("edu_lang");
-    userdata.edu_time = document.getElementById("edu_time");
-    userdata.edu_course = document.getElementById("edu_course");
+    userdata.edu_type = document.getElementById("edu_type").value;
+    userdata.edu_lang = document.getElementById("edu_lang").value;
+    userdata.edu_time = document.getElementById("edu_time").value;
+    userdata.edu_course = document.getElementById("edu_course").value;
 
     console.log(userdata);
     
