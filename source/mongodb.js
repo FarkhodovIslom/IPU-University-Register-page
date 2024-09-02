@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const uri = "mongodb+srv://hanzo:Gh8TzUyYR8kBk2l6@cluster0.rgyzlv1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/Students";
 
-mongoose.connect(uri)
+mongoose.connect(uri, {serverSelectionTimeoutMS: 20000,})
 .then(() => {
     console.log("Database connected succesfully");
 })
