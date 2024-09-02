@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  ____   __    ___   _     _     ___   ___   ___   _    
+ | |_   / /\  | |_) | |_/ | |_| / / \ | | \ / / \ \ \  /
+ |_|   /_/--\ |_| \ |_| \ |_| | \_\_/ |_|_/ \_\_/  \_\/ 
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Seo meta tags -->
+    <meta name="description" content="">
+    <meta name="author" content="FarkhodovIslom">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index,follow">
+
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="./images/logo_dark.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Iqtisod vs Pedagogika Universtitetiga ro'yxatdan o'tish</title>
+</head>
+<body class="bg-light">
+
+  <!-- Header -->
+   <header class="container-md d-flex align-items-center justify-content-between pt-4">
+    <a href="#" class="logo">
+      <img src="/template/images/logo_dark.png" width="160" alt="">
+    </a>
+    <h1 class="heading h3 mb-0 text-primary">2024-2025-o'quv yili uchun ariza topshirish</h1>
+   </header>
+   <!-- Header End -->
+
+   <div class="container-md">
+    <hr>
+   </div>
+
+    <div class="container-md">
+      <div class="row justify-content-start">
+        <div class="form-wrapper">
+          <form action="/index" method="post">
+
+            <div class="row">
+
+              <div class="col-md-6 col-lg-5">
+                <h3 class="h3 mb-3 mt-3 text-primary">
+                  <i class="text-primary fa-solid fa-user"></i>
+                  Shaxsiy ma'lumotlar
+                </h3>
+    
+                <div class="mb-3">
+                  <label for="name" class="form-label">Familiya <span class="text-primary">*</span></label>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    name="lastName" 
+                    id="lastName" 
+                    required>
+                </div>
+    
+                <div class="mb-3">
+                  <label for="lastName" class="form-label">Ism <span class="text-primary">*</span></label>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    name="firstName" 
+                    id="firstName" 
+                    required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="year" class="form-label">Tug'ilgan sanasi <span class="text-primary">*</span></label>
+                  <input 
+                    type="date" 
+                    class="form-control" 
+                    name="year"
+                    id="year" 
+                    max="2007-12-31" 
+                    required>
+                </div>
+    
+                <div class="mb-3">
+                  <label for="number" class="form-label">Telefon Raqam <span class="text-primary">*</span></label>
+                  <div class="input-group">
+                    <span class="input-group-text">+998</span>
+                    <input 
+                        type="tel" 
+                        inputmode="numeric" 
+                        class="form-control" 
+                        name="number" 
+                        id="number" 
+                        placeholder="__-___-__-__" 
+                        minlength="9" 
+                        maxlength="9" 
+                        pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" 
+                        required>
+                  </div>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="passport" class="form-label">Passport seriasi <span>*</span></label>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    name="passport" 
+                    id="passport" 
+                    pattern="^[A-Z]{2}[0-9]{7}$" 
+                    maxlength="9" 
+                    placeholder="AB1234567" 
+                    required>
+                </div>
+              </div>
+  
+              <div class="col-md-6 col-lg-5">
+                <h3 class="h3 mb-3 mt-3 text-primary">
+                  <i class="fa-solid fa-file"></i>
+                  Ariza
+                </h3>
+
+                <div class="mb-3">
+                  <label for="edu_type" class="form-label">Ta'lim turi <span class="text-primary">*</span></label>
+                  <select class="form-select" name="edu_type" id="edu_type">
+                    <option value="Bakalavriat">Bakalavriat</option>
+                    <option value="Magistratura">Magistratura</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="edu_lang" class="form-label">Ta'lim tili <span class="text-primary">*</span></label>
+                  <select class="form-select" name="edu_lang" id="edu_lang">
+                    <option value="Uzb">O'zbek</option>
+                    <option value="Ru">Rus</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="edu_time" class="form-label">Ta'lim Shakli <span class="text-primary">*</span></label>
+                  <select class="form-select" name="edu_time" id="edu_time">
+                    <option value="Kunduzgi">Kunduzgi</option>
+                    <option value="Sirtqi">Sirtqi</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="edu_course" class="form-label">Ta'lim yo'nalishi <span>*</span></label>
+                  <select class="form-select" name="edu_course" id="edu_course">
+                    <option value="Iqtisodiyot">Iqtisodiyot</option>
+                    <option value="Moliya">Moliya va Moliyaviy texnologiyalar</option>
+                    <option value="Bank_ishi">Bank Ishi</option>
+                    <option value="Boshlangich_talim">Boshlang'ich ta'lim</option>
+                    <option value="Maktabgacha_talim">Maktabgacha ta'lim</option>
+                    <option value="Jismoniy_madaniyat">Jismoniy Madaniyat</option>
+                    <option value="Texnologik_talim">Texnologik ta'lim</option>
+                    <option value="Tarix">Tarix</option>
+                    <option value="Milliy_goya_manaviyat_asoslari_va_huquq_talimi">Milliy g'oya, ma'naviyat asoslari va huquq ta'limi</option>
+                    <option value="Psixologiya">Psixologiya</option>
+                    <option value="Biologiya">Biologiya</option>
+                    <option value="Uzbek_tili_va_adabiyoti">O'zbek tili va adabiyoti</option>
+                    <option value="Filiologiya_va_tillarni_oqitish:_ingliz_tili">Filiologiya va tillarni o'qitish: ingliz tili</option>
+                    <option value="Filiologiya_va_tillarni_oqitish:_rus_tili">Filiologiya va tillarni o'qitish: rus tili</option>
+                    <option value="Filiologiya_va_tillarni_oqitish:_uzbek_tili">Filiologiya va tillarni o'qitish: o'zbek tili</option>
+                    <option value="Axborot_tizimlari_va_texnologiyalari">Axborot tizimlari va texnologiyalari</option>
+                    <option value="Kompyuter_injiniringi">Kompyuter injiniringi</option>
+                    <option value="Kompyuter_injiniringi:_Kompyuter_tizimlari_xavfsizligi">Kompyuter injiniringi: Kompyuter tizimlari xavfsizligi</option>
+                    <option value="Neft_va_gaz ishi:_Neft_va_gaz_konlarini_ishga_tushirish_va_ulardan_foydalanish">Neft va gaz ishi: Neft va gaz konlarini ishga tushirish va ulardan foydalanish</option>
+                    <option value="Neft_va_gaz_ishi:_Neft_va_gaz_quvurlarini_burg'ulash">Neft va gaz ishi: Neft va gaz quvurlarini burg'ulash</option>
+                    <option value="Konchilik_ishi">Konchilik ishi</option>
+                    <option value="Metallurgiya_muhandisligi">Metallurgiya muhandisligi</option>
+                    <option value="Foydali_qazilma_konlari_geologiyasi_qidiruv_va_razvedkasi">Foydali qazilma konlari geologiyasi qidiruv va razvedkasi</option>
+                    <option value="Yol_harakatlarini_tashkil_etish">Yo'l harakatlarini tashkil etish</option>
+                    <option value="Yol_harakatlarini_tashkil_etish">Yo'l harakatlarini tashkil etish: Avtomobil transportida yo'l harakatini tashkil etish</option>
+                    <option value="Yol_harakatlarini_tashkil_etish">Yo'l harakatlarini tashkil etish: Temir yo'l transportida yo'l harakatini tashkil etish</option>
+                    <option value="Geodeziya_va_geoinformatika">Geodeziya va geoinformatika</option>
+                    <option value="Kadastr">Kadastr</option>
+                    <option value="Mehnat_muhofazasi">Mehnat muhofazasi</option>
+                    <option value="Mehnat_muhofazasi">Mehnat muhofazasi: Arxitektura va qurilish</option>
+                    <option value="Mehnat_muhofazasi">Mehnat muhofazasi: Kimyo va oziq-ovqat sanoati</option>
+                    <option disabled>--(Magistratura)--</option>
+                    <option value="Iqtisodiyot">Iqtisodiyot (Magistratura)</option>
+                    <option value="Pedagogika">Pedagogika (Magistratura)</option>
+                    <option value="Xorijiy_til_va_adabiyoti">Xorijiy til va adabiyoti (Magistratura)</option>
+                    <option value="Tarix">Tarix (Magistratura)</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="mb-3 mt-3">
+                <button id="sendBtn" type="submit" class="btn btn-primary">
+                  <i class="fa-solid fa-paper-plane"></i> &nbsp;
+                  Ro'yxatdan o'tish
+                </button>
+              </div> 
+
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer container-fluid bg-primary">
+      <div class="text-center ">
+        <a class="text-light" href="./files_ls/license.jpg" target="_blank">
+          Litsenziyani ko'rish
+        </a>
+      </div>
+    </footer>
+
+<!-- Scripts -->
+<script>
+  const passportInput = document.querySelector("#passport");
+
+  passportInput.addEventListener("input", (e) => {
+      let value = e.target.value.toUpperCase();
+      value = value.replace(/[^A-Z0-9]/g, '');
+
+      if (value.length === 1) {
+          value = value.replace(/[^A]/g, '');
+      } else if (value.length === 2) {
+          value = value[0] + value[1].replace(/[^A-D]g/, '')
+      } else {
+          value = value.substring(0,2) + value.substring(2).replace(/[^0-9]/g, '');
+      }
+
+      e.target.value = value;
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+</body> 
+</html>
