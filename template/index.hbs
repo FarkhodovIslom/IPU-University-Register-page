@@ -73,7 +73,17 @@
                     id="firstName" 
                     required>
                 </div>
-
+				  
+				<div class="mb-3">
+                  <label for="lastName" class="form-label">Sharif <span class="text-primary">*</span></label>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    name="" 
+                    id="" 
+                    required>
+                </div>
+				  
                 <div class="mb-3">
                   <label for="year" class="form-label">Tug'ilgan sanasi <span class="text-primary">*</span></label>
                   <input 
@@ -81,7 +91,8 @@
                     class="form-control" 
                     name="year"
                     id="year" 
-                    max="2007-12-31" 
+                    max="2007-12-31"
+					min="1972-12-31"
                     required>
                 </div>
     
@@ -141,7 +152,8 @@
 
                 <div class="mb-3">
                   <label for="edu_time" class="form-label">Ta'lim Shakli <span class="text-primary">*</span></label>
-                  <select class="form-select" name="edu_time" id="edu_time">
+                  <select class="form-select" name="edu_time" id="edu_time" required>
+					<option selected disabled >--ta'lim shaklini tanlang--</option>
                     <option value="Kunduzgi">Kunduzgi</option>
                     <option value="Sirtqi">Sirtqi</option>
                   </select>
@@ -151,18 +163,18 @@
                   <label for="edu_course" class="form-label">Ta'lim yo'nalishi <span>*</span></label>
                   <select class="form-select" name="edu_course" id="edu_course">
                     <option value="Iqtisodiyot">Iqtisodiyot</option>
-                    <option value="Moliya">Moliya va Moliyaviy texnologiyalar</option>
-                    <option value="Bank_ishi">Bank Ishi</option>
-                    <option value="Boshlangich_talim">Boshlang'ich ta'lim</option>
-                    <option value="Maktabgacha_talim">Maktabgacha ta'lim</option>
-                    <option value="Jismoniy_madaniyat">Jismoniy Madaniyat</option>
-                    <option value="Texnologik_talim">Texnologik ta'lim</option>
+                    <option value="Moliya va Moliyaviy texnologiyalar">Moliya va Moliyaviy texnologiyalar</option>
+                    <option value="Bank Ishi">Bank Ishi</option>
+                    <option value="Boshlang'ich ta'lim">Boshlang'ich ta'lim</option>
+                    <option value="Maktabgacha ta'lim">Maktabgacha ta'lim</option>
+                    <option value="Jismoniy Madaniyat">Jismoniy Madaniyat</option>
+                    <option value="Texnologik ta'lim">Texnologik ta'lim</option>
                     <option value="Tarix">Tarix</option>
-                    <option value="Milliy_goya_manaviyat_asoslari_va_huquq_talimi">Milliy g'oya, ma'naviyat asoslari va huquq ta'limi</option>
+                    <option value="Milliy g'oya, ma'naviyat asoslari va huquq ta'limi">Milliy g'oya, ma'naviyat asoslari va huquq ta'limi</option>
                     <option value="Psixologiya">Psixologiya</option>
                     <option value="Biologiya">Biologiya</option>
-                    <option value="Uzbek_tili_va_adabiyoti">O'zbek tili va adabiyoti</option>
-                    <option value="Filiologiya_va_tillarni_oqitish:_ingliz_tili">Filiologiya va tillarni o'qitish: ingliz tili</option>
+                    <option value="O'zbek tili va adabiyoti">O'zbek tili va adabiyoti</option>
+                    <option value="Filiologiya va tillarni o'qitish: ingliz tili">Filiologiya va tillarni o'qitish: ingliz tili</option>
                     <option value="Filiologiya_va_tillarni_oqitish:_rus_tili">Filiologiya va tillarni o'qitish: rus tili</option>
                     <option value="Filiologiya_va_tillarni_oqitish:_uzbek_tili">Filiologiya va tillarni o'qitish: o'zbek tili</option>
                     <option value="Axborot_tizimlari_va_texnologiyalari">Axborot tizimlari va texnologiyalari</option>
@@ -189,14 +201,16 @@
                   </select>
                 </div>
 
+                <div class="mb-3 mt-3">
+                  <button id="sendBtn" type="submit" class="btn btn-primary">
+                    <i class="fa-solid fa-paper-plane"></i> &nbsp;
+                    Ro'yxatdan o'tish
+                  </button>
+                </div> 
+
               </div>
 
-              <div class="mb-3 mt-3">
-                <button id="sendBtn" type="submit" class="btn btn-primary">
-                  <i class="fa-solid fa-paper-plane"></i> &nbsp;
-                  Ro'yxatdan o'tish
-                </button>
-              </div> 
+              
 
             </div>
             
@@ -205,11 +219,11 @@
       </div>
     </div>
 
-    <footer id="footer" class="footer container-fluid bg-primary">
+    <footer id="footer" class="footer container-fluid bg-primary" style="bottom: -100px;">
       <div class="text-center ">
-        <a class="text-light" href="./files_ls/license.jpg" target="_blank">
-          Litsenziyani ko'rish
-        </a>
+		  <a href="https://cert-images-32e4b9.netlify.app" target="_blank"> 
+		  	  Litsenziya va narxlar
+		  </a>
       </div>
     </footer>
 
